@@ -1,0 +1,20 @@
+$color-one : #fff;
+$color-two : #000;
+
+@mixin test() {
+  text-shadow: 10px 10px 10px black;
+}
+
+p {
+  color: $color-one;
+  border:2px;
+  @include test();
+  font-size: 3rem;
+}
+
+h1 {
+  color: red;
+  width: 100px;
+  height: 20px;
+  margin: 20px;
+}
