@@ -1,2 +1,2 @@
 # preprocessing-css
-Link to the [page](https://varkoff.github.io/preprocessing-css/public/precious.html) !
+Link to the [page](https://varkoff.github.io/preprocessing-css/precious.html) !
