@@ -1,2 +1,2 @@
 <?php
-include '../precious.html';
+include 'precious.html';
