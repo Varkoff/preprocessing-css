@@ -1,20 +1,118 @@
-$color-one : #fff;
-$color-two : #000;
+@font-face {
+  font-family: "Lord of The Rings";
+  src:url("anirb___.ttf") format("truetype");
+};
+$color-one: #fff;
+$color-two: #000;
+$navColor: #E56D22;
+$linkSize : "1rem";
 
-@mixin test() {
-  text-shadow: 10px 10px 10px black;
+@mixin ring($width, $color) {
+  margin-left: -$width/2;
+  width: $width;
+  height: $width;
+  border: $width/10 solid $color;
+  border-radius: $width;
+  box-shadow: inset $width/10 $width/10 $width/50 desaturate($color, 50), $width/10 $width/10 $width/50 desaturate($color, 50);
 }
 
-p {
-  color: $color-one;
-  border:2px;
-  @include test();
-  font-size: 3rem;
+body{
+
+  font-family: "Lord of The Rings";
+  margin:0px;
+  padding: 0px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: $navColor;
+  margin:0px;
+  padding: 0px;
+
+  a {
+    float: left;
+    color: $color-one;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: $linkSize;
+    text-transform: uppercase;
+
+    &:nth-child(odd), &:nth-child(even) {
+      border-right: 2px solid $color-one;
+    }
+
+    &:first-child, &:last-child {
+      border-right: 0px solid $color-one;
+    }
+
+    &:hover {
+      background-color: desaturate($navColor, 50);
+    }
+
+    &.active {
+      background-color: saturate($navColor, 50);
+      font-weight: bold;
+      color: $color-one;
+    }
+  }
 }
 
-h1 {
-  color: red;
-  width: 100px;
-  height: 20px;
-  margin: 20px;
+footer {
+  background-color: $navColor;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  .footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: $color-one;
+    flex-grow: 1;
+    .footerContent {
+      padding: 10px;
+      font-size: $linkSize;
+    }
+  }
+}
+
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 1200px;
+
+}
+
+.ringtest-OneRing {
+  @include ring(150px, yellow);
+  flex-direction: column;
+}
+
+.ringtest-header {
+  @include ring(50px, orange);
+  flex-direction: column;
+}
+
+.header {
+  margin: 30px;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+$increment: 1;
+@for $i from 1 through 6 {
+  $increment: $increment + 0.15;
+  .ringtest-#{$i} {
+    @include ring(50px*$increment, rgba(40, 40, 40, 1));
+    flex-direction: column;
+  }
 }

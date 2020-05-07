@@ -1,15 +1,159 @@
-p {
-  color: #fff;
-  border: 2px;
-  text-shadow: 10px 10px 10px black;
-  font-size: 3rem;
+@font-face {
+  font-family: "Lord of The Rings";
+  src: url("anirb___.ttf") format("truetype");
+}
+body {
+  font-family: "Lord of The Rings";
+  margin: 0px;
+  padding: 0px;
 }
 
-h1 {
-  color: red;
-  width: 100px;
-  height: 20px;
-  margin: 20px;
+.topnav {
+  overflow: hidden;
+  background-color: #E56D22;
+  margin: 0px;
+  padding: 0px;
+}
+.topnav a {
+  float: left;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: "1rem";
+  text-transform: uppercase;
+}
+.topnav a:nth-child(odd), .topnav a:nth-child(even) {
+  border-right: 2px solid #fff;
+}
+.topnav a:first-child, .topnav a:last-child {
+  border-right: 0px solid #fff;
+}
+.topnav a:hover {
+  background-color: #a77b60;
+}
+.topnav a.active {
+  background-color: #ff6708;
+  font-weight: bold;
+  color: #fff;
+}
+
+footer {
+  background-color: #E56D22;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+footer .footerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  flex-grow: 1;
+}
+footer .footerContainer .footerContent {
+  padding: 10px;
+  font-size: "1rem";
+}
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 1200px;
+}
+
+.ringtest-OneRing {
+  margin-left: -75px;
+  width: 150px;
+  height: 150px;
+  border: 15px solid yellow;
+  border-radius: 150px;
+  box-shadow: inset 15px 15px 3px #bfbf40, 15px 15px 3px #bfbf40;
+  flex-direction: column;
+}
+
+.ringtest-header {
+  margin-left: -25px;
+  width: 50px;
+  height: 50px;
+  border: 5px solid orange;
+  border-radius: 50px;
+  box-shadow: inset 5px 5px 1px #bf9240, 5px 5px 1px #bf9240;
+  flex-direction: column;
+}
+
+.header {
+  margin: 30px;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.ringtest-1 {
+  margin-left: -28.75px;
+  width: 57.5px;
+  height: 57.5px;
+  border: 5.75px solid #282828;
+  border-radius: 57.5px;
+  box-shadow: inset 5.75px 5.75px 1.15px #282828, 5.75px 5.75px 1.15px #282828;
+  flex-direction: column;
+}
+
+.ringtest-2 {
+  margin-left: -32.5px;
+  width: 65px;
+  height: 65px;
+  border: 6.5px solid #282828;
+  border-radius: 65px;
+  box-shadow: inset 6.5px 6.5px 1.3px #282828, 6.5px 6.5px 1.3px #282828;
+  flex-direction: column;
+}
+
+.ringtest-3 {
+  margin-left: -36.25px;
+  width: 72.5px;
+  height: 72.5px;
+  border: 7.25px solid #282828;
+  border-radius: 72.5px;
+  box-shadow: inset 7.25px 7.25px 1.45px #282828, 7.25px 7.25px 1.45px #282828;
+  flex-direction: column;
+}
+
+.ringtest-4 {
+  margin-left: -40px;
+  width: 80px;
+  height: 80px;
+  border: 8px solid #282828;
+  border-radius: 80px;
+  box-shadow: inset 8px 8px 1.6px #282828, 8px 8px 1.6px #282828;
+  flex-direction: column;
+}
+
+.ringtest-5 {
+  margin-left: -43.75px;
+  width: 87.5px;
+  height: 87.5px;
+  border: 8.75px solid #282828;
+  border-radius: 87.5px;
+  box-shadow: inset 8.75px 8.75px 1.75px #282828, 8.75px 8.75px 1.75px #282828;
+  flex-direction: column;
+}
+
+.ringtest-6 {
+  margin-left: -47.5px;
+  width: 95px;
+  height: 95px;
+  border: 9.5px solid #282828;
+  border-radius: 95px;
+  box-shadow: inset 9.5px 9.5px 1.9px #282828, 9.5px 9.5px 1.9px #282828;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=styles.css.map */
